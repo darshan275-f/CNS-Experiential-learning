@@ -1,0 +1,30 @@
+{
+  "name": "cns-encryption-api",
+  "version": "1.0.0",
+  "description": "Secure file and text encryption backend using AES-256-GCM and legacy DES-CBC",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --openssl-legacy-provider server.js",
+    "start:modern-only": "node server.js",
+    "dev": "node --openssl-legacy-provider --watch server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "encryption",
+    "aes",
+    "des",
+    "express",
+    "crypto"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

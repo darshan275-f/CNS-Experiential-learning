@@ -1,4 +1,4 @@
-** Screen Shots of output is in folder output_png **
+# Screen Shots of output is in folder output_png 
 
 
 
